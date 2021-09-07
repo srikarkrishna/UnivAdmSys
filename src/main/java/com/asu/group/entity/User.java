@@ -20,7 +20,7 @@ public class User {
     @Id
     @GeneratedValue
     private int id;
-    private String username;
+    private String userName;
     private String password;
     private boolean active;
     private String roles; // ROLE_ADMIN, ROLE_MAC, ROLE_USER

@@ -18,7 +18,7 @@ public class GroupUserDetails implements UserDetails {
     private List<GrantedAuthority> authorities;
 
     public GroupUserDetails(User user){
-        this.username = user.getUsername();
+        this.username = user.getUserName();
         this.password = user.getPassword();
         this.isActive = user.isActive();
         this.authorities = Arrays.stream(user.getRoles().split(","))
